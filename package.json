@@ -1,4 +1,19 @@
 {
+  "name": "express-api-skeleton",
+  "version": "1.0.0",
+  "description": "Skeleton for Express APIs",
+  "main": "index.js",
+  "author": "Ismael Ordás Carro",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node ./dist/src/server.js",
+    "dev": "ts-node-dev ./src/server.ts",
+    "build": "tsc",
+    "lint": "eslint --ignore-path .gitignore . --ext .ts",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "jest --verbose"
+  },
   "dependencies": {
     "express": "^4.17.1"
   },
